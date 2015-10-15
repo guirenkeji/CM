@@ -22,7 +22,6 @@ def mesoscollet():
     
 def create():
     mesoscolletlist = mesoscollet()
-    print mesoscolletlist
     diskused = mesoscolletlist['disk_used']
     disktotal = mesoscolletlist['disk_total']
     cpustotal = mesoscolletlist['master/cpus_total']
@@ -37,10 +36,4 @@ def create():
 
     
 # print json.dump(mesosMetricslist)
-# b = StringIO()
-# c = pycurl.Curl()
-# c.setopt(c.URL, 'http://20.26.17.133:5050/metrics/snapshot')
-# c.setopt(c.WEITEDATA,b)
-# c.perform()
-# boby = b.getvalue()
-create()
+
